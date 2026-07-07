@@ -30,13 +30,13 @@ function Home() {
               브랜드 소개
             </Link>
             <Link to="/test" className="sub-button">
-              향 테스트
+              향 테스트 바로가기
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section">
+      {/* <section className="section">
         <div className="section-title">
           <span>PROJECT OVERVIEW</span>
           <h2>감성을 향기로, 추억을 오브제로</h2>
@@ -45,7 +45,7 @@ function Home() {
             업사이클링 가챠 오브제를 통해 기억을 형태로 남기는 브랜드입니다.
           </p>
         </div>
-      </section>
+      </section> */}
 
       <section className="section">
         <div className="section-title">

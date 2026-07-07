@@ -157,7 +157,7 @@ a {
 .button {
   display: inline-block;
   padding: 16px 36px;
-  background: #b17a3f;
+  background: #6f471cc6;
   color: white;
   border-radius: 12px;
   border: none;
@@ -220,6 +220,10 @@ a {
   border: 1px solid rgba(95, 125, 101, 0.1);
   text-align: center;
   transition: 0.25s;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card:hover {
@@ -245,26 +249,26 @@ a {
 
 .card h3 {
   font-size: 24px;
-  margin: 28px 24px 12px;
+  margin: 0 0 8px;
   color: #334a38;
   word-break: keep-all;
 }
 
 .city {
-  margin: 0 24px 14px;
+  margin: 0 0 12px;
   color: #2f3a2f;
   font-weight: 900;
 }
 
 .card p {
-  margin: 0 24px 18px;
+  margin: 0 24px 12px;
+  line-height: 1.5;
   color: #5f6e5f;
-  line-height: 1.7;
   word-break: keep-all;
 }
 
 .card .button {
-  margin: 8px 0 32px;
+  margin: auto auto 32px;
 }
 
 /* old emoji */
@@ -595,8 +599,8 @@ a {
   display: inline-block;
   padding: 14px 24px;
   border-radius: 999px;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 2px solid #614d2f;
+  color: #614d2f;
   text-decoration: none;
   font-weight: 700;
 }
@@ -763,5 +767,98 @@ a {
   .header nav {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 34px 24px 32px;
+}
+
+.concept {
+  margin: 0;
+  line-height: 1.5;
+  color: #5f6e5f;
+  word-break: keep-all;
+  min-height: 48px;
+}
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+.step-card {
+  background: #fffaf0;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(78, 64, 45, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+}
+
+.step-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;   /* 이미지 비율 유지 */
+  object-fit: cover;     /* 꽉 차게 */
+  display: block;
+}
+
+.step-card span {
+  display: block;
+  margin: 22px 0 8px;
+  color: #9b6b43;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.step-card h3 {
+  margin: 0 20px 12px;
+  color: #3f3528;
+  text-align: center;
+}
+
+.step-card p {
+  margin: 0 20px 24px;
+  color: #6b604f;
+  line-height: 1.7;
+  text-align: center;
+  word-break: keep-all;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .step-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .step-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .step-card img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .step-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .step-card p {
+    font-size: 0.95rem;
   }
 }
