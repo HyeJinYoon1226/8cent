@@ -11,12 +11,14 @@ import Detail from "./pages/Detail";
 import Upcycling from "./pages/Upcycling";
 import FindUs from "./pages/FindUs";
 import { PerfumeProvider } from "./context/PerfumeContext";
+import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 
 function App() {
   return (
     <PerfumeProvider>
       <BrowserRouter basename="/8cent/">
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
