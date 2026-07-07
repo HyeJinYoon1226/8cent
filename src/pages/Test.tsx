@@ -17,8 +17,7 @@ const questions: Question[] = [
     options: [
       { text: "화려한 밤거리", type: "citrus" },
       { text: "고요한 새벽", type: "woody" },
-      { text: "맑은 오후", type: "fresh" },
-      { text: "노을 지는 저녁", type: "sweet" },
+      { text: "맑은 자연의 오후", type: "fresh" },
     ],
   },
   {
@@ -27,7 +26,6 @@ const questions: Question[] = [
       { text: "번화가와 쇼핑거리", type: "citrus" },
       { text: "사찰과 전통 건축물", type: "woody" },
       { text: "공원과 자연", type: "fresh" },
-      { text: "항구와 카페거리", type: "sweet" },
     ],
   },
   {
@@ -36,7 +34,6 @@ const questions: Question[] = [
       { text: "설렘과 에너지", type: "citrus" },
       { text: "평온함과 여유", type: "woody" },
       { text: "자유로움과 상쾌함", type: "fresh" },
-      { text: "따뜻함과 낭만", type: "sweet" },
     ],
   },
   {
@@ -45,7 +42,6 @@ const questions: Question[] = [
       { text: "화려하고 선명한 색감", type: "citrus" },
       { text: "차분한 필름 감성", type: "woody" },
       { text: "밝고 자연스러운 풍경", type: "fresh" },
-      { text: "감성적인 야경 사진", type: "sweet" },
     ],
   },
   {
@@ -54,7 +50,6 @@ const questions: Question[] = [
       { text: "시트러스", type: "citrus" },
       { text: "우디", type: "woody" },
       { text: "그린", type: "fresh" },
-      { text: "바닐라·앰버", type: "sweet" },
     ],
   },
   {
@@ -63,7 +58,6 @@ const questions: Question[] = [
       { text: "즉흥적으로 돌아다닌다", type: "citrus" },
       { text: "천천히 둘러본다", type: "woody" },
       { text: "자연을 찾아간다", type: "fresh" },
-      { text: "예쁜 장소를 기록한다", type: "sweet" },
     ],
   },
   {
@@ -72,7 +66,6 @@ const questions: Question[] = [
       { text: "트렌디한 굿즈", type: "citrus" },
       { text: "전통 공예품", type: "woody" },
       { text: "자연 소재 소품", type: "fresh" },
-      { text: "향수나 디퓨저", type: "sweet" },
     ],
   },
   {
@@ -81,7 +74,6 @@ const questions: Question[] = [
       { text: "반짝이는 도시의 기억", type: "citrus" },
       { text: "시간이 머무는 골목의 기억", type: "woody" },
       { text: "바람이 스치는 자연의 기억", type: "fresh" },
-      { text: "따뜻한 감성이 남는 기억", type: "sweet" },
     ],
   },
 ];
@@ -93,7 +85,6 @@ function Test() {
     citrus: 0,
     woody: 0,
     fresh: 0,
-    sweet: 0,
   });
 
   const navigate = useNavigate();

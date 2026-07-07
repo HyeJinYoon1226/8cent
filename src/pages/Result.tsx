@@ -6,7 +6,6 @@ const resultMap: Record<string, number> = {
   citrus: 1,
   woody: 2,
   fresh: 3,
-  sweet: 4,
 };
 
 function Result() {
@@ -32,6 +31,7 @@ function Result() {
         <h1>{perfume.name}</h1>
         <h3>{perfume.city}</h3>
         <p>{perfume.description}</p>
+        <p className="story-text">{perfume.story}</p>
 
         <div className="note-list">
           {perfume.notes.map((note) => (

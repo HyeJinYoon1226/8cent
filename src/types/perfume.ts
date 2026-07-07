@@ -1,4 +1,4 @@
-export type AnswerType = "citrus" | "woody" | "fresh" | "sweet";
+export type AnswerType = "citrus" | "woody" | "fresh";
 
 export type Perfume = {
   id: number;
@@ -8,5 +8,6 @@ export type Perfume = {
   concept: string;
   notes: string[];
   description: string;
+  story : string;
   image: string;
 };

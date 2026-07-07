@@ -547,3 +547,31 @@ a {
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
+
+.story-text {
+  margin-top: 16px;
+  line-height: 1.8;
+  color: #6f6256;
+  font-size: 15px;
+}
+
+.brand-section {
+  background-color: #fbf7ef;
+  border-top: 1px solid #eadfce;
+}
+
+.delete-button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 999px;
+  background-color: #d9c6ae;
+  color: #4d3b2f;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-button:hover {
+  background-color: #c8ad91;
+}

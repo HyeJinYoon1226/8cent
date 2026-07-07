@@ -23,7 +23,9 @@ function Detail() {
 
         <h1>{perfume.name}</h1>
         <h2>{perfume.city}</h2>
+
         <p>{perfume.description}</p>
+        <p className="story-text">{perfume.story}</p>
 
         <h3>향 노트</h3>
         <div className="note-list">

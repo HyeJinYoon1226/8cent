@@ -12,7 +12,7 @@ import "./style.css";
 function App() {
   return (
     <PerfumeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/8cent/">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
