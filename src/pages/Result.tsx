@@ -24,12 +24,12 @@ function Result() {
           <img src={perfume.image} alt={perfume.name} />
         </div>
 
-        <p className="result-subtitle">
-          당신의 여행 무드와 가장 닮은 향
-        </p>
+        <p className="result-subtitle">당신의 여행 무드와 가장 닮은 향</p>
 
         <h1>{perfume.name}</h1>
         <h3>{perfume.city}</h3>
+        <p className="mood-text">{perfume.mood}</p>
+
         <p>{perfume.description}</p>
         <p className="story-text">{perfume.story}</p>
 

@@ -21,8 +21,9 @@ function Detail() {
           <img src={perfume.image} alt={perfume.name} />
         </div>
 
+        <p className="eyebrow">{perfume.city} SCENT</p>
         <h1>{perfume.name}</h1>
-        <h2>{perfume.city}</h2>
+        <h2>{perfume.concept}</h2>
 
         <p>{perfume.description}</p>
         <p className="story-text">{perfume.story}</p>

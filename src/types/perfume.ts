@@ -8,6 +8,7 @@ export type Perfume = {
   concept: string;
   notes: string[];
   description: string;
-  story : string;
+  story: string;
+  mood: string;
   image: string;
 };
